@@ -14,4 +14,7 @@ header {
 	.shadow { 
 	text-shadow: 2px 2px 4px steelblue;
 	}
-	
+main {
+	h3 { color:#800000;
+	   }
+
