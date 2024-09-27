@@ -21,6 +21,6 @@ header h2 {
 main a {
   color: #800000 !important;
 }
-.resources a {
-  color: steelblue;
+main ul a {
+  color: steelblue !important;
 }
