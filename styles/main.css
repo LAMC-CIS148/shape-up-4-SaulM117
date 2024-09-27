@@ -5,10 +5,10 @@ header img {
 	float: left;	
 }
 header { 
-	h2  {  font-size: 130%;
+	h2  {  font-size: 170%;
 	color: steelblue;
 	font-style: italic;
-	text-indext: 30px;
+	text-indext: 40px;
 	    }
 	.shadow { 
 	text-shadow: 2px 2px 4px steelblue;
