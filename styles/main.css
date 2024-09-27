@@ -9,4 +9,7 @@ header {
 	color: steelblue;
 	text-indext: 30px:
 	    }
+	.shadow { 
+	text-shadow: 2px 2px 4px steelblue;
+	}
 	
