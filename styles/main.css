@@ -16,6 +16,6 @@ header {
 	}
 
 
-	a {
+	a:link {
 	 color: red;
 	   }
