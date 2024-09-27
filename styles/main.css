@@ -16,7 +16,6 @@ header {
 	}
 
 
-	.href {
-	 color: var(--global-color-1);
+	a {
 	 color: red;
 	   }
