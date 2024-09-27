@@ -1,23 +1,24 @@
 body {
   font-family: Arial, sans-serif;
 }
+
 header img {
-	float: left;
-	margin: 10px 20px 10px 0;
-}
-header { 
-	h2  {  font-size: 170%;
-	color: steelblue;
-	font-style: italic;
-	text-indext: 40px;
-	    }
-	}
-	.shadow { 
-	text-shadow: 2px 2px 4px steelblue;
-	}
-main {
-	a { color: red;
-	  }
+  float: left;
+  margin: 10px 20px 10px 0;
 }
 
+header h2 {
+  font-size: 170%;
+  color: steelblue;
+  font-style: italic;
+  text-indent: 40px;
+}
+
+.shadow {
+  text-shadow: 2px 2px 4px steelblue;
+}
+
+main a {
+  color: red;
+}
 
