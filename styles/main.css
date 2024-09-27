@@ -15,7 +15,9 @@ header {
 	text-shadow: 2px 2px 4px steelblue;
 	}
 /* thestyles for the main content */
-main h3 {
+main {
+	h3 {
+	 color: var(--global-color-1);
 	 color:#800000;
 	   }
-
+}
