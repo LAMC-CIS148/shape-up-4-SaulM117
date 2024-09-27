@@ -1,5 +1,8 @@
 body {
   font-family: Arial, sans-serif;
+	a {
+	color: red !important;
+	   }
 }
 header img {
 	float: left;
@@ -16,8 +19,4 @@ header {
 	}
 
 
-main {	
-	a {
-	 color: red !important;
-	   }
-     }
+
