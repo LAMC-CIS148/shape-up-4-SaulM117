@@ -19,7 +19,6 @@ header h2 {
 }
 
 main a {
-  color: var(--global-color-1);
-  color: #800000;
+  color: #800000 !important;
 }
 
