@@ -2,13 +2,14 @@ body {
   font-family: Arial, sans-serif;
   width: 900px;
   margin: 0 auto;
-  border: 1px solid steelblue;
+  border: 2px solid steelblue;
   box-shadow: 0 0 10px black;
 	
 }
 
 header img {
   float: left;
+  border-bottom: 1px solid steelblue;
   margin: 10px 20px 10px 0;
 }
 
@@ -30,5 +31,7 @@ main ul a {
   color: steelblue !important;
 }
 footer { text-align: center;
+	background-color: steelblue;
+  	color: white;
 	
        }
