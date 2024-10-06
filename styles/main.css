@@ -37,6 +37,7 @@ aside {
   float: left;
   width: 470px;
   margin-right: 130px;
+  list-style: disc;
 }
 
 aside h2 {
