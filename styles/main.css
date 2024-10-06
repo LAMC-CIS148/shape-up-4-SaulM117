@@ -35,8 +35,8 @@ main {
 
 aside {
   float: left;
-  width: 350px;
-  margin-right: 40px;
+  width: 400px;
+  margin-right: 80px;
 }
 
 aside h2 {
