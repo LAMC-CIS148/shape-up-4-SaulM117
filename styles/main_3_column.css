@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 900px;
+  margin: 0 auto;
+  border: 2px solid steelblue;
+  box-shadow: 0 0 10px black;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid steelblue;
+  background: linear-gradient(to bottom, white, lightsteelblue);
+}
+
+header img {
+  float: left;
+  border-bottom: 1px solid steelblue;
+  margin: 10px 20px 10px 0;
+}
+
+header h2 {
+  font-size: 170%;
+  color: steelblue;
+  font-style: italic;
+  text-indent: 40px;
+}
+
+.shadow {
+  text-shadow: 2px 2px 4px steelblue;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  float: left;
+  width: 470px;
+  margin-right: 130px;
+}
+
+aside h2 {
+  color: #800000;
+}
+
+main a {
+  color: #800000 !important;
+}
+
+main ul a {
+  color: steelblue !important;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  background-color: steelblue;
+  color: white;
+}
