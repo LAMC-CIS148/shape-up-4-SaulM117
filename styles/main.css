@@ -35,17 +35,13 @@ main {
 
 aside {
   float: left;
-  width: 470px;
+  width: 500px;
   margin-right: 130px;
 }
 main aside:last-child {
-  width: 470px;
+  width: 500px;
   margin-left: auto;
   margin-right: 20;
-}
-
-main aside:first-child {
-  margin-right: 130px;
 }
 aside h2 {
   color: #800000;
