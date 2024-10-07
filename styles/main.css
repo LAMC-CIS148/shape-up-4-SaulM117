@@ -38,10 +38,14 @@ aside {
   width: 470px;
   margin-right: 130px;
 }
-aside:last-child {
+main aside:last-child {
   width: 470px;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 20;
+}
+
+main aside:first-child {
+  margin-right: 130px;
 }
 aside h2 {
   color: #800000;
