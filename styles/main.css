@@ -31,6 +31,7 @@ header h2 {
 
 main {
   display: flex;
+  justify-content: space-between; /* Added justify-content property */
 }
 
 aside {
@@ -38,10 +39,10 @@ aside {
   width: 350px; /* Increased width */
   margin-right: 50px; /* Reduced margin */
 }
-main aside:last-child {
-  width: 350px; /* Increased width */
+aside:last-child {
+  width: 350px;
   margin-left: auto;
-  margin-right: 20;
+  margin-right: 0;
 }
 aside h2 {
   color: #800000;
