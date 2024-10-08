@@ -35,11 +35,11 @@ main {
 
 aside {
   float: left;
-  width: 500px;
-  margin-right: 130px;
+  width: 350px; /* Increased width */
+  margin-right: 50px; /* Reduced margin */
 }
 main aside:last-child {
-  width: 500px;
+  width: 350px; /* Increased width */
   margin-left: auto;
   margin-right: 20;
 }
