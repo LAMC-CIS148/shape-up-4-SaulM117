@@ -47,3 +47,63 @@ footer {
   background-color: steelblue;
   color: white;
 }
+
+/* the styles for the nav element */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+	width: 20%;
+	text-align: center;
+	position: relative;
+}
+
+#nav_menu ul li a {
+	display: block;
+	padding: 1em;
+	background-color: #800000;
+	color: #fffded;
+	text-decoration: none;
+	border-bottom: 2px solid #800000;
+}
+
+#nav_menu ul li a.current {
+	color: yellow;
+}
+
+#nav_menu ul ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #800000;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	z-index: 1000;
+}
+
+#nav_menu ul li:hover ul {
+	display: block;
+}
+
+#nav_menu ul ul li {
+	width: 100%;
+	float: none;
+	text -align: left;
+}
+#nav_menu ul ul il {
+	padding: 0.5em 1em;
+	color: fffded;
+	text-decoration: none;
+}
+#nav_menu ul ul li a:hover {
+	background-color: #c23616;
+}
