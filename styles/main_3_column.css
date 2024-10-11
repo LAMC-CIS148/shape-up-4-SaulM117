@@ -33,16 +33,6 @@ main {
   display: flex;
 }
 
-aside {
-  float: left;
-  width: 470px;
-  margin-right: 130px;
-}
-
-aside h2 {
-  color: #800000;
-}
-
 main a {
   color: #800000 !important;
 }
