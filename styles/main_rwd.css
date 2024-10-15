@@ -1,8 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  max-width: 1024px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 2.5%;
   border: 2px solid steelblue;
   box-shadow: 0 0 10px black;
 }
@@ -11,21 +10,16 @@ header {
   width: 100%;
   border-bottom: 1px solid steelblue;
   background: linear-gradient(to bottom, white, lightsteelblue);
-  padding: 1em 0;
 }
 
 header img {
   float: left;
   border-bottom: 1px solid steelblue;
-  margin: 0.5em 1em 0.5em 0;
-  max-width: 140px;
-  min-width: 70px;
-  width: 100%;
-  height: auto;
+  margin: 10px 20px 10px 0;
 }
 
 header h2 {
-  font-size: 1.7em;
+  font-size: 170%;
   color: steelblue;
   font-style: italic;
   text-indent: 40px;
@@ -37,20 +31,19 @@ header h2 {
 
 main {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-between; /* Added justify-content property */
 }
 
 aside {
-  flex-basis: 30%;
-  margin: 1em;
+  float: left;
+  width: 350px; /* Increased width */
+  margin-right: 50px; /* Reduced margin */
 }
-
 aside:last-child {
+  width: 350px;
   margin-left: auto;
   margin-right: 0;
 }
-
 aside h2 {
   color: #800000;
 }
@@ -68,5 +61,4 @@ footer {
   text-align: center;
   background-color: steelblue;
   color: white;
-  padding: 1em;
 }
