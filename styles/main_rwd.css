@@ -91,10 +91,10 @@ footer {
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  float: right;
   background-color: #fff;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 3px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
