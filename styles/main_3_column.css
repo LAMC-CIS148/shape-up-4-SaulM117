@@ -55,7 +55,7 @@ aside h3 {
   width: 100%;
   background-color: steelblue;
   border-bottom: 1px solid #ccc;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -67,7 +67,7 @@ aside h3 {
 
 #nav_menu ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #nav_menu ul li a {
