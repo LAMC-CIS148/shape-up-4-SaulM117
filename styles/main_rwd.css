@@ -52,34 +52,72 @@ aside h3 {
 	color: #800000
 }
 #nav_menu {
-  width: 100%;
-  background-color: steelblue;
-  border-bottom: 1px solid #ccc;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+#menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#menu-toggle span:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+#menu-toggle span:last-child {
+  margin-bottom: 0;
+}
+
+#menu-items {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
   padding: 10px;
-  text-align: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#nav_menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+#menu-items li {
+  margin-bottom: 10px;
 }
 
-#nav_menu ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-#nav_menu ul li a {
+#menu-items a {
   text-decoration: none;
-  color: white; 
-}
-
-#nav_menu ul li a:hover {
   color: #333;
 }
 
-#nav_menu ul li.current a {
-  color: #333;
-  font-weight: bold;
+#menu-toggle:checked + #menu-items {
+  display: block;
+}
+
+#menu-toggle:checked span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
