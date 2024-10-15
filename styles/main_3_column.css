@@ -55,7 +55,7 @@ aside h3 {
   width: 100%;
   background-color: steelblue;
   border-bottom: 1px solid #ccc;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -72,7 +72,7 @@ aside h3 {
 
 #nav_menu ul li a {
   text-decoration: none;
-  color: white;
+  color: white; 
 }
 
 #nav_menu ul li a:hover {
