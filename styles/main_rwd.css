@@ -1,5 +1,99 @@
 body {
   font-family: Arial, sans-serif;
+  width: 900px;
+  margin: 0 auto;
+  border: 2px solid steelblue;
+  box-shadow: 0 0 10px black;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid steelblue;
+  background: linear-gradient(to bottom, white, lightsteelblue);
+}
+
+header img {
+  float: left;
+  border-bottom: 1px solid steelblue;
+  margin: 10px 20px 10px 0;
+}
+
+header h2 {
+  font-size: 170%;
+  color: steelblue;
+  font-style: italic;
+  text-indent: 40px;
+}
+
+.shadow {
+  text-shadow: 2px 2px 4px steelblue;
+}
+
+main {
+  display: flex;
+}
+
+main a {
+  color: #800000 !important;
+}
+
+main ul a {
+  color: steelblue !important;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  background-color: steelblue;
+  color: white;
+}
+
+aside h3 {
+	color: #800000
+}
+#nav_menu {
+  width: 100%;
+  background-color: steelblue;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#nav_menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav_menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#nav_menu ul li a {
+  text-decoration: none;
+  color: #800000;
+}
+
+#nav_menu ul li a:hover {
+  color: #333;
+}
+
+#nav_menu ul li.current a {
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+
+
+Other 
+
+
+
+body {
+  font-family: Arial, sans-serif;
   width: 1200px;
   margin: 0 auto;
   border: 2px solid steelblue;
