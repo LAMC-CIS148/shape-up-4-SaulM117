@@ -52,11 +52,9 @@ footer {
 	color: #800000
 }
 #nav_menu {
-  display: flex;
   position: relative;
   background-color: steelblue !important;
   float: right;
-  padding: 20px;
 }
 
 #menu-toggle {
