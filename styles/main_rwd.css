@@ -55,6 +55,7 @@ footer {
   display: flex;
   align-items: center;
   background-color: steelblue;
+  float: right;
 }
 
 #menu-toggle {
