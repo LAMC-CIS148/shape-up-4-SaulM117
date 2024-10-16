@@ -54,7 +54,6 @@ footer {
 #nav_menu {
   display: flex;
   position: relative;
-  align-items: center;
   background-color: steelblue !important;
   float: right;
 }
