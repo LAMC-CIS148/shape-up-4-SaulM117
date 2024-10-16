@@ -52,7 +52,6 @@ footer {
 	color: #800000
 }
 #nav_menu {
-  position: relative;
   display: flex;
   align-items: center;
   background-color: steelblue;
