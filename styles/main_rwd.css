@@ -50,48 +50,49 @@ footer {
  h3 {
 	color: #800000
 }
-#nav_menu {
-  position: relative;
-  background-color: steelblue !important;
-  float: right;
+#mobile_menu {
+	display: none;
 }
 
-#menu-toggle {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
+@media only screen and (max-width: 734px) {
+	section h1 {
+		font-size: 125%
+	}
+	section h2, aside h2 {
+		font-size: 110%;
+	}
+	aside h3 a {
+		font-size: 85%;
+	}
 }
 
-#menu-toggle span {
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: steelblue !important;
-  margin-bottom: 5px;
-  transition: transform 0.3s ease-in-out;
+@media only screen and (max-width: 648px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;
+		width: 95%;
+	}
+	article img { max-width: 30%; }
+	#speakers {
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #800000 !important;
+	}
 }
 
-#menu-toggle span:nth-child(2) {
-  margin-bottom: 5px;
+@media only screen and (max-width: 414px) {
+	body { font-size: 90%; }
 }
-
-#menu-toggle span:last-child {
-  margin-bottom: 0;
-}
-
-#menu-items {
-  display: none;
-  position: absolute;
-  top: 100%;
-  float: right;
-  background-color: steelblue !important;
-  padding: 30px;
-  border: 3px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
