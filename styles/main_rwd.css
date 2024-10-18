@@ -52,9 +52,9 @@ footer {
 	color: #800000
 }
 aside {
-	width: 26.875%;                     /* 215 / 800 x 100 */
-	float: right;
-	padding: 0 0 20px 2.5%;             /* 20 / 800 x 100 */
+	width: 245px;                   /* 215 / 800 x 100 */
+	float: left;
+	padding:              /* 20 / 800 x 100 */
 }
 /* the styles for the navigation menu */
 #nav_menu ul {
