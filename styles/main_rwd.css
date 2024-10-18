@@ -55,6 +55,11 @@ aside {
 	width: 245px;                   
 	float: left;         
 }
+aside h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
 /* the styles for the navigation menu */
 #nav_menu ul {
 	list-style-type: none;
