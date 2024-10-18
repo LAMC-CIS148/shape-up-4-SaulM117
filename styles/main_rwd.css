@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  width: 900px;
+  width: 99%;
+  max-width: 960px;
   margin: 0 auto;
   border: 2px solid steelblue;
   box-shadow: 0 0 10px black;
@@ -55,12 +56,12 @@ footer {
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
-    background-color: #800000;
+    background-color: steelblue;
     color: white;
     font-weight: bold;
 }
 #nav_menu a.current {
-	color: yellow;
+	color: black;
 }
 #nav_menu ul ul {
 	width: 100%;
