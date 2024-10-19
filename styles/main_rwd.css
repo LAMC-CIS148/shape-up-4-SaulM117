@@ -1,76 +1,82 @@
 body {
-  font-family: Arial, sans-serif;
-  width: 99%;
-  max-width: 960px;
-  margin: 0 auto;
-  border: 2px solid steelblue;
-  box-shadow: 0 0 10px black;
+    font-family: Arial, sans-serif;
+    width: 99%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 2px solid steelblue;
+    box-shadow: 0 0 10px black;
 }
 
 header {
-  width: 100%;
-  border-bottom: 1px solid steelblue;
-  background: linear-gradient(to bottom, white, lightsteelblue);
+    width: 100%;
+    border-bottom: 1px solid steelblue;
+    background: linear-gradient(to bottom, white, lightsteelblue);
 }
 
 header img {
-  float: left;
-  margin: 10px 20px 10px 0;
+    float: left;
+    margin: 10px 20px 10px 0;
 }
 
 header h2 {
-  font-size: 170%;
-  color: steelblue;
-  font-style: italic;
-  text-indent: 40px;
+    font-size: 170%;
+    color: steelblue;
+    font-style: italic;
+    text-indent: 40px;
 }
 
 .shadow {
-  text-shadow: 2px 2px 4px steelblue;
+    text-shadow: 2px 2px 4px steelblue;
 }
 
 main {
-  display: flex;
+    display: flex; /* Use flexbox for layout */
 }
 
-main a {
-  color: #800000 !important;
+section {
+    flex: 1; /* Allow section to take remaining space */
+    padding-right: 20px; /* Add space between section and aside */
 }
 
-main ul a {
-  color: steelblue !important;
+aside {
+    width: 245px; /* Set width for aside */
+    /* Optional styles */
+    background-color: lightgray; /* Background color for visibility */
+    padding: 10px; /* Add some padding */
 }
 
 footer {
-  clear: both;
-  text-align: center;
-  background-color: steelblue;
-  color: white;
+    clear: both;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
 }
 
- h3 {
-	color: #800000
+main a {
+    color: #800000 !important;
 }
-aside {
-	width: 245px;                   
-	float: left;         
+
+main ul a {
+    color: steelblue !important;
 }
-aside h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
+
+h3 {
+    color: #800000;
 }
-/* the styles for the navigation menu */
+
+/* Navigation styles */
 #nav_menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
+
 #nav_menu ul li {
     float: left;
-    width: 20%;                 /* 160 / 800 x 100 */
+    width: 20%; /* Adjust width as needed */
 }
+
 #nav_menu ul li a {
     display: block;
     text-align: center;
@@ -80,21 +86,26 @@ aside h2 {
     color: white;
     font-weight: bold;
 }
+
 #nav_menu a.current {
-	color: black;
+    color: black;
 }
+
 #nav_menu ul ul {
     width: 100%;
     display: none;
     position: absolute;
     top: 100%;
 }
+
 #nav_menu ul ul li {
-	float: none;
+    float: none;
 }
+
 #nav_menu ul li:hover > ul {
-	display: block;
+    display: block;
 }
+
 #nav_menu > ul::after {
     content: "";
     clear: both;
@@ -102,48 +113,48 @@ aside h2 {
 }
 
 #mobile_menu {
-	display: none;
+    display: none;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 734px) {
-	section h1 {
-		font-size: 125%
-	}
-	section h2, aside h2 {
-		font-size: 110%;
-	}
-	aside h3 a {
-		font-size: 85%;
-	}
+    section h1 {
+        font-size: 125%;
+    }
+    section h2, aside h2 {
+        font-size: 110%;
+    }
+    aside h3 a {
+        font-size: 85%;
+    }
 }
 
 @media only screen and (max-width: 648px) {
-	header img { float: none; }
-	header { text-align: center; }
-	section {
-		float: none;
-		width: 95%;
-	}
-	aside {
-		float: none;
-		padding-right: 2.5%;
-		width: 95%;
-	}
-	article img { max-width: 30%; }
-	#speakers {
-		column-count: 2;
-	}
-	#nav_menu {
-		display: none;
-	}
-	#mobile_menu {
-		display: block;
-	}
-	.slicknav_menu {
-		background-color: #800000 !important;
-	}
+    header img { 
+        float: none; 
+    }
+    header { 
+        text-align: center; 
+    }
+    section {
+        float: none;
+        width: 95%;
+    }
+    aside {
+        float: none;
+        padding-right: 2.5%;
+        width: 95%;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 414px) {
-	body { font-size: 90%; }
+    body { 
+        font-size: 90%; 
+    }
 }
