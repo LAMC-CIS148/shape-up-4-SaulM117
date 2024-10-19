@@ -40,7 +40,6 @@ section {
 
 aside {
     width: 245px; /* Fixed width for aside */
-    float: left;
     background-color: lightgray; /* Optional for visibility */
     padding: 10px; /* Add some padding */
     box-shadow: 0 0 5px gray; /* Optional: add shadow for depth */
