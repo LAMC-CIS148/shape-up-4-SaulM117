@@ -52,18 +52,6 @@ footer {
     color: white;
 }
 
-main a {
-    color: #800000 !important;
-}
-
-main ul a {
-    color: steelblue !important;
-}
-
-h3 {
-    color: #800000;
-}
-
 /* Navigation styles */
 #nav_menu ul {
     list-style-type: none;
@@ -104,18 +92,13 @@ h3 {
 }
 
 @media only screen and (max-width: 648px) {
-    header img { 
-        float: none; 
+    main {
+        flex-direction: column; /* Stack on smaller screens */
     }
-    header { 
-        text-align: center; 
-    }
+
     section, aside {
-        width: 100%; /* Stack on smaller screens */
+        width: 100%; /* Full width on smaller screens */
         padding-right: 0; /* Remove padding on smaller screens */
-    }
-    #nav_menu {
-        display: none;
     }
 }
 
