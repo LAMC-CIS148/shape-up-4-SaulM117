@@ -35,14 +35,14 @@ main {
 
 section {
     flex: 1; /* Allow section to take remaining space */
-    padding-right: 20px; /* Add space between section and aside */
+    padding-right: 20px; /* Space between section and aside */
 }
 
 aside {
-    width: 245px; /* Set width for aside */
-    /* Optional styles */
-    background-color: lightgray; /* Background color for visibility */
+    width: 245px; /* Fixed width for aside */
+    background-color: lightgray; /* Optional for visibility */
     padding: 10px; /* Add some padding */
+    box-shadow: 0 0 5px gray; /* Optional: add shadow for depth */
 }
 
 footer {
@@ -69,7 +69,6 @@ h3 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;
 }
 
 #nav_menu ul li {
@@ -89,31 +88,6 @@ h3 {
 
 #nav_menu a.current {
     color: black;
-}
-
-#nav_menu ul ul {
-    width: 100%;
-    display: none;
-    position: absolute;
-    top: 100%;
-}
-
-#nav_menu ul ul li {
-    float: none;
-}
-
-#nav_menu ul li:hover > ul {
-    display: block;
-}
-
-#nav_menu > ul::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-#mobile_menu {
-    display: none;
 }
 
 /* Media Queries */
@@ -136,20 +110,12 @@ h3 {
     header { 
         text-align: center; 
     }
-    section {
-        float: none;
-        width: 95%;
-    }
-    aside {
-        float: none;
-        padding-right: 2.5%;
-        width: 95%;
+    section, aside {
+        width: 100%; /* Stack on smaller screens */
+        padding-right: 0; /* Remove padding on smaller screens */
     }
     #nav_menu {
         display: none;
-    }
-    #mobile_menu {
-        display: block;
     }
 }
 
