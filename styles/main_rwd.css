@@ -44,6 +44,10 @@ aside {
     padding: 10px; /* Add some padding */
 }
 
+aside h2 {
+    color: #800000;
+}
+
 footer {
     clear: both;
     text-align: center;
