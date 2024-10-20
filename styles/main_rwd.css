@@ -36,10 +36,10 @@ section {
 }
 
 aside {
-    width: 245px; /* Fixed width for the aside */
+    width: 245px; /* Set a fixed width for the aside */
     background-color: lightgray; /* Background color for visibility */
     padding: 10px; /* Padding for spacing */
-    margin-right: 20px; /* Space between aside and section */
+    margin-left: 0; /* Align aside to the left */
 }
 
 footer {
@@ -82,7 +82,7 @@ footer {
     }
     section, aside {
         width: 100%; /* Full width on smaller screens */
-        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Remove left margin */
     }
 }
 
