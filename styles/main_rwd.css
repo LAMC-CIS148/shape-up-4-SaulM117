@@ -115,40 +115,32 @@ h3 {
     display: none;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 734px) {
-    section h1 {
-        font-size: 125%;
-    }
-    section h2, aside h2 {
-        font-size: 110%;
-    }
-    aside h3 a {
-        font-size: 85%;
-    }
 }
 
-@media only screen and (max-width: 648px) {
-    header img { 
-        float: none; 
+@media only screen and (max-width: 767px) {
+    header h2 {
+        font-size: 200%; /* Increase header font size */
     }
-    header { 
-        text-align: center; 
+    
+    main {
+        flex-direction: column; /* Stack elements in one column */
     }
-    section {
-        float: none;
-        width: 95%;
+
+    .slicknav_menu {
+        background-color: steelblue !important; /* Background color for mobile menu */
+        padding: 3px !important; /* Padding for mobile menu */
     }
-    aside {
-        float: none;
-        padding-right: 2.5%;
-        width: 95%;
+    
+    .slicknav_menu ul {
+        background-color: steelblue !important; /* Background for ul elements */
     }
-    #nav_menu {
-        display: none;
+    
+    .slicknav_menu a {
+        color: white; /* Text color for links */
     }
-    #mobile_menu {
-        display: block;
+    
+    .slicknav_menu a:hover {
+        color: lightsteelblue; /* Hover color for links */
     }
 }
 
