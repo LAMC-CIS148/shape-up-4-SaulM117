@@ -1,10 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    width: 99%;
-    max-width: 960px;
-    margin: 0 auto;
-    border: 2px solid steelblue;
-    box-shadow: 0 0 10px black;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -35,14 +32,13 @@ main {
 
 section {
     flex: 1; /* Allow section to take remaining space */
-    padding-right: 20px; /* Add space between section and aside */
+    padding: 20px; /* Space inside section */
 }
 
 aside {
-    width: 245px; /* Set width for aside */
-    /* Optional styles */
+    width: 245px; /* Set a fixed width for the aside */
     background-color: lightgray; /* Background color for visibility */
-    padding: 10px; /* Add some padding */
+    padding: 10px; /* Add padding for spacing */
 }
 
 footer {
@@ -52,24 +48,11 @@ footer {
     color: white;
 }
 
-main a {
-    color: #800000 !important;
-}
-
-main ul a {
-    color: steelblue !important;
-}
-
-h3 {
-    color: #800000;
-}
-
 /* Navigation styles */
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: relative;
 }
 
 #nav_menu ul li {
@@ -113,48 +96,21 @@ h3 {
 }
 
 #mobile_menu {
-    display: none;
+    display: none; /* Hide mobile menu initially */
 }
 
 /* Media Queries */
-@media only screen and (max-width: 734px) {
-    section h1 {
-        font-size: 125%;
-    }
-    section h2, aside h2 {
-        font-size: 110%;
-    }
-    aside h3 a {
-        font-size: 85%;
-    }
-}
-
 @media only screen and (max-width: 648px) {
-    header img { 
-        float: none; 
+    main {
+        flex-direction: column; /* Stack elements vertically */
     }
-    header { 
-        text-align: center; 
-    }
-    section {
-        float: none;
-        width: 95%;
-    }
-    aside {
-        float: none;
-        padding-right: 2.5%;
-        width: 95%;
-    }
-    #nav_menu {
-        display: none;
-    }
-    #mobile_menu {
-        display: block;
+    section, aside {
+        width: 100%; /* Full width on smaller screens */
     }
 }
 
 @media only screen and (max-width: 414px) {
     body { 
-        font-size: 90%; 
+        font-size: 90%; /* Adjust font size for smaller screens */
     }
 }
