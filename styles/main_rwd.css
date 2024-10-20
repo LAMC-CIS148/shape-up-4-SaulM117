@@ -36,10 +36,10 @@ section {
 }
 
 aside {
-    width: 245px; /* Set a fixed width for the aside */
+    width: 245px !important; /* Force fixed width for the aside */
     background-color: lightgray; /* Background color for visibility */
     padding: 10px; /* Add padding for spacing */
-    float: left !important;
+    margin-left: 0 !important; /* Ensure it aligns to the left */
 }
 
 footer {
@@ -106,7 +106,7 @@ footer {
         flex-direction: column; /* Stack elements vertically */
     }
     section, aside {
-        width: 100%; /* Full width on smaller screens */
+        width: 100% !important; /* Full width on smaller screens */
     }
 }
 
