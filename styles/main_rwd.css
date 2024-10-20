@@ -113,9 +113,7 @@ h3 {
 
 #mobile_menu {
     display: none;
-}
-
-}
+    }
 
 @media only screen and (max-width: 767px) {
     header h2 {
@@ -141,6 +139,32 @@ h3 {
     
     .slicknav_menu a:hover {
         color: lightsteelblue; /* Hover color for links */
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    header h2 {
+        font-size: 150%; /* Reduce header font size */
+    }
+    
+    header h3 {
+        font-size: 110%; /* Reduce subheading font size */
+    }
+    
+    section h2 {
+        font-size: 120%; /* Reduce section heading font size */
+    }
+
+    section p, section h3 {
+        font-size: 90%; /* Reduce font size of paragraphs and section h3 */
+    }
+    
+    aside h2 {
+        font-size: 100%; /* Adjust aside heading size */
+    }
+    
+    aside h3 {
+        font-size: 90%; /* Adjust aside subheading size */
     }
 }
 
