@@ -39,6 +39,7 @@ aside {
     width: 245px; /* Set a fixed width for the aside */
     background-color: lightgray; /* Background color for visibility */
     padding: 10px; /* Add padding for spacing */
+    float: left !important;
 }
 
 footer {
