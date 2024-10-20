@@ -36,10 +36,11 @@ section {
 }
 
 aside {
-    width: 245px !important; /* Force fixed width for the aside */
+    width: 245px; /* Set a fixed width for the aside */
     background-color: lightgray; /* Background color for visibility */
-    padding: 10px; /* Add padding for spacing */
-    margin-left: 0 !important; /* Ensure it aligns to the left */
+    padding: 10px; /* Padding for spacing */
+    margin-left: 0; /* Align aside to the left */
+    position: relative; /* Ensure it doesn't float */
 }
 
 footer {
@@ -75,38 +76,13 @@ footer {
     color: black;
 }
 
-#nav_menu ul ul {
-    width: 100%;
-    display: none;
-    position: absolute;
-    top: 100%;
-}
-
-#nav_menu ul ul li {
-    float: none;
-}
-
-#nav_menu ul li:hover > ul {
-    display: block;
-}
-
-#nav_menu > ul::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
-#mobile_menu {
-    display: none; /* Hide mobile menu initially */
-}
-
 /* Media Queries */
 @media only screen and (max-width: 648px) {
     main {
         flex-direction: column; /* Stack elements vertically */
     }
     section, aside {
-        width: 100% !important; /* Full width on smaller screens */
+        width: 100%; /* Full width on smaller screens */
     }
 }
 
