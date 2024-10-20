@@ -39,8 +39,8 @@ aside {
     width: 245px; /* Set a fixed width for the aside */
     background-color: lightgray; /* Background color for visibility */
     padding: 10px; /* Padding for spacing */
-    margin-left: 0; /* Align aside to the left */
-    position: relative; /* Ensure it doesn't float */
+    margin-left: 0; /* Ensure no margin on the left */
+    order: -1; /* Move aside to the left in flexbox order */
 }
 
 footer {
