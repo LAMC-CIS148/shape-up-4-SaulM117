@@ -2,8 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 960px;
-    margin: 0 auto;
 }
 
 header {
@@ -96,10 +94,6 @@ footer {
     content: "";
     clear: both;
     display: block;
-}
-
-#mobile_menu {
-    display: none;
 }
 
 /* Media Queries */
