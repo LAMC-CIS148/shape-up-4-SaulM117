@@ -28,6 +28,7 @@ header h2 {
 
 main {
     display: flex; /* Use flexbox for layout */
+    margin: 20px; /* Add some margin around the main content */
 }
 
 section {
