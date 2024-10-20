@@ -1,7 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    width: 99%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 2px solid steelblue;
+    box-shadow: 0 0 10px black;
 }
 
 header {
@@ -27,19 +30,19 @@ header h2 {
 }
 
 main {
-    display: flex;
+    display: flex; /* Use flexbox for layout */
 }
 
 section {
-    flex: 1;
-    padding: 20px; /* Add padding for better spacing */
+    flex: 1; /* Allow section to take remaining space */
+    padding-right: 20px; /* Add space between section and aside */
 }
 
 aside {
-    width: 245px;
-    background-color: lightgray; /* Optional for visibility */
-    padding: 10px;
-    margin-left: 0; /* Ensure it aligns to the left */
+    width: 245px; /* Set width for aside */
+    /* Optional styles */
+    background-color: lightgray; /* Background color for visibility */
+    padding: 10px; /* Add some padding */
 }
 
 footer {
@@ -49,11 +52,24 @@ footer {
     color: white;
 }
 
+main a {
+    color: #800000 !important;
+}
+
+main ul a {
+    color: steelblue !important;
+}
+
+h3 {
+    color: #800000;
+}
+
 /* Navigation styles */
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 #nav_menu ul li {
@@ -75,14 +91,65 @@ footer {
     color: black;
 }
 
+#nav_menu ul ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#mobile_menu {
+    display: none;
+}
+
 /* Media Queries */
-@media only screen and (max-width: 648px) {
-    main {
-        flex-direction: column; /* Stack elements vertically */
+@media only screen and (max-width: 734px) {
+    section h1 {
+        font-size: 125%;
     }
-    section, aside {
-        width: 100%; /* Full width on smaller screens */
-        padding: 0; /* Remove padding */
+    section h2, aside h2 {
+        font-size: 110%;
+    }
+    aside h3 a {
+        font-size: 85%;
+    }
+}
+
+@media only screen and (max-width: 648px) {
+    header img { 
+        float: none; 
+    }
+    header { 
+        text-align: center; 
+    }
+    section {
+        float: none;
+        width: 95%;
+    }
+    aside {
+        float: none;
+        padding-right: 2.5%;
+        width: 95%;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
     }
 }
 
