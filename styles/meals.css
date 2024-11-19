@@ -11,7 +11,29 @@ header {
     width: 100%;
     border-bottom: 1px solid steelblue;
     background: linear-gradient(to bottom, white, lightsteelblue);
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 20px 0; /* Add padding to push down content */
 }
+
+header img {
+    margin-right: 20px; /* Add space between the image and the text */
+}
+
+header h2, header h3 {
+    margin: 0; /* Remove default margins */
+    padding: 0;
+}
+
+header h2 {
+    font-size: 2.5rem;
+}
+
+header h3 {
+    font-size: 1.5rem;
+    color: #800000;
+}
+
 .shadow {
     text-shadow: 2px 2px 4px steelblue;
 }
@@ -19,10 +41,10 @@ header {
 main {
     display: flex; /* Use flexbox for layout */
 }
+
 aside {
     width: 245px; /* Set width for aside */
-    /* Optional styles */
-    padding: 10px; /* Add some padding */
+    padding: 10px; /* Add padding */
 }
 
 aside h2 {
@@ -35,19 +57,7 @@ footer {
     background-color: steelblue;
     color: white;
 }
-main a {
-    color: #800000 !important;
-}
 
-main ul a {
-    color: steelblue !important;
-}
-
-h3 {
-    color: #800000;
-}
-
-/* Navigation styles */
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
@@ -97,13 +107,18 @@ h3 {
 
 #mobile_menu {
     display: none;
-    }
+}
 
 @media only screen and (max-width: 767px) {
     header h2 {
         font-size: 200%; /* Increase header font size */
     }
-    
+
+    header {
+        flex-direction: column; /* Stack header elements in one column for smaller screens */
+        align-items: flex-start; /* Align items to the left */
+    }
+
     main {
         flex-direction: column; /* Stack elements in one column */
     }
@@ -112,15 +127,15 @@ h3 {
         background-color: steelblue !important; /* Background color for mobile menu */
         padding: 3px !important; /* Padding for mobile menu */
     }
-    
+
     .slicknav_menu ul {
         background-color: steelblue !important; /* Background for ul elements */
     }
-    
+
     .slicknav_menu a {
         color: white; /* Text color for links */
     }
-    
+
     .slicknav_menu a:hover {
         color: lightsteelblue; /* Hover color for links */
     }
@@ -130,3 +145,4 @@ h3 {
     header h2 {
         font-size: 150%; /* Reduce header font size */
     }
+}
