@@ -3,16 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <img src="images/shape_up_logo.png" alt="shape up" width="80">
     <link rel="stylesheet" href="../styles/meals.css">
     <title>Shape Up!</title>
 </head>
 
 <body>
     <header>
+        <!-- Moved image inside the body and header -->
+        <img src="images/shape_up_logo.png" alt="shape up" width="80">
         <h2><em class="shadow">Shape Up!</em></h2>
         <h3>Find the best fit for you</h3>
     </header>
+    
     <nav id="nav_menu">
         <ul>
             <li><a href="#">Home</a></li>
@@ -22,6 +24,7 @@
             <li><a href="#">Healthy Diets</a></li>
         </ul>
     </nav>
+    
     <main>
         <aside>
             <h2>Additional resources</h2>
@@ -33,6 +36,7 @@
                 <li><a href="#">Yoga workout</a></li>
             </ul>
         </aside>
+        
         <section>
             <h2>Meal plan order form</h2>
             <p>
@@ -66,6 +70,7 @@
                     <label for="age">Age:</label>
                     <input type="number" id="age" placeholder="Select your age"><br>
                 </fieldset>
+
                 <fieldset>
                     <legend>Lifestyle and goals</legend>
                     <p>Which currently matches your present lifestyle?</p>
@@ -82,6 +87,7 @@
                     <label><input type="radio" name="weight_goal" value="lose"> Lose weight</label><br>
                     <label><input type="radio" name="weight_goal" value="maintain"> Maintain current weight</label>
                 </fieldset>
+
                 <fieldset>
                     <legend>Food preferences and restrictions</legend>
                     <p>Do you have any dietary restrictions? (Select all that apply)</p>
@@ -92,10 +98,12 @@
                     <label><input type="checkbox" name="diet" value="other"> Other:</label>
                     <textarea rows="2"></textarea>
                 </fieldset>
+
                 <fieldset>
                     <legend>Comments:</legend>
                     <textarea rows="3" placeholder="Include any additional information..."></textarea>
                 </fieldset>
+
                 <fieldset>
                     <legend>Process your information</legend>
                     <button type="submit">Submit now</button>
@@ -104,8 +112,10 @@
             </form>
         </section>
     </main>
+    
     <footer>
         &copy; 2022 Shape Up!
     </footer>
 </body>
+
 </html>
