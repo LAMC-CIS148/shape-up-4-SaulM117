@@ -8,16 +8,17 @@ body {
 }
 
 header {
-    width: 100%;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Align text and image side by side */
     border-bottom: 1px solid steelblue;
     background: linear-gradient(to bottom, white, lightsteelblue);
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    padding: 20px 0; /* Add padding to push down content */
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
 header img {
-    margin-right: 20px; /* Add space between the image and the text */
+    margin-right: 20px; /* Add space between the image and text */
 }
 
 header h2, header h3 {
@@ -27,11 +28,13 @@ header h2, header h3 {
 
 header h2 {
     font-size: 2.5rem;
+    color: #800000;
 }
 
 header h3 {
     font-size: 1.5rem;
     color: #800000;
+    margin-top: 5px; /* Slight top margin for visual clarity */
 }
 
 .shadow {
@@ -39,12 +42,14 @@ header h3 {
 }
 
 main {
-    display: flex; /* Use flexbox for layout */
+    display: flex;
+    flex-direction: column; /* Stack elements in one column */
+    margin-bottom: 20px; /* Space between main content and footer */
 }
 
 aside {
-    width: 245px; /* Set width for aside */
-    padding: 10px; /* Add padding */
+    width: 245px;
+    padding: 10px;
 }
 
 aside h2 {
@@ -111,11 +116,11 @@ footer {
 
 @media only screen and (max-width: 767px) {
     header h2 {
-        font-size: 200%; /* Increase header font size */
+        font-size: 200%;
     }
 
     header {
-        flex-direction: column; /* Stack header elements in one column for smaller screens */
+        flex-direction: column; /* Stack elements in one column for smaller screens */
         align-items: flex-start; /* Align items to the left */
     }
 
@@ -124,25 +129,34 @@ footer {
     }
 
     .slicknav_menu {
-        background-color: steelblue !important; /* Background color for mobile menu */
-        padding: 3px !important; /* Padding for mobile menu */
+        background-color: steelblue !important;
+        padding: 3px !important;
     }
 
     .slicknav_menu ul {
-        background-color: steelblue !important; /* Background for ul elements */
+        background-color: steelblue !important;
     }
 
     .slicknav_menu a {
-        color: white; /* Text color for links */
+        color: white;
     }
 
     .slicknav_menu a:hover {
-        color: lightsteelblue; /* Hover color for links */
+        color: lightsteelblue;
     }
 }
 
 @media only screen and (max-width: 479px) {
     header h2 {
-        font-size: 150%; /* Reduce header font size */
+        font-size: 150%;
+    }
+
+    header {
+        text-align: center; /* Center text and image for mobile */
+        gap: 20px; /* Space between image and text */
+    }
+
+    header img {
+        margin-bottom: 10px; /* Push image down on smaller screens */
     }
 }
