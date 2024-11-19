@@ -1,3 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 99%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 2px solid steelblue;
+    box-shadow: 0 0 10px black;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid steelblue;
+    background: linear-gradient(to bottom, white, lightsteelblue);
+}
+.shadow {
+    text-shadow: 2px 2px 4px steelblue;
+}
+
+main {
+    display: flex; /* Use flexbox for layout */
+}
+aside {
+    width: 245px; /* Set width for aside */
+    /* Optional styles */
+    padding: 10px; /* Add some padding */
+}
+
+aside h2 {
+    color: #800000;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+}
+main a {
+    color: #800000 !important;
+}
+
+main ul a {
+    color: steelblue !important;
+}
+
+h3 {
+    color: #800000;
+}
+
+/* Navigation styles */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 20%; /* Adjust width as needed */
+}
+
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: steelblue !important;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu a.current {
+    color: black;
+}
+
 #nav_menu ul ul {
     width: 100%;
     display: none;
