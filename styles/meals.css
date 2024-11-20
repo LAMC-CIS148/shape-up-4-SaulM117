@@ -84,17 +84,18 @@ footer {
 /* Form container styles */
 form {
     margin: 20px 0 20px 5%; /* Moves the form slightly to the left */
-    padding: 20px; /* Keeps internal spacing consistent */
+    padding: 15px; /* Keeps internal spacing consistent */
     background-color: transparent; /* No background or borders */
     box-shadow: none;
-    width: auto; /* Adjusts to content */
+    width: 75%; /* Shrinks the form width */
+    max-width: 600px; /* Ensures a compact maximum width */
 }
 
 /* Fieldset styles */
 fieldset {
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: white; /* Keeps fieldsets clearly visible */
+    padding: 10px; /* Reduce padding inside fieldsets */
+    margin-bottom: 15px; /* Less margin between fieldsets */
+    background-color: white;
 }
 
 /* Legend styles */
@@ -140,7 +141,7 @@ button {
     background-color: steelblue;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 8px 12px; /* Reduced button size */
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
