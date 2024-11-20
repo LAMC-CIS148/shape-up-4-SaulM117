@@ -3,7 +3,7 @@ body {
     width: 99%;
     max-width: 960px;
     margin: 0 auto;
-    border: none; /* Removed border */
+    border: none;
     box-shadow: 0 0 10px black;
 }
 
@@ -123,7 +123,7 @@ form {
 }
 
 form fieldset {
-    border: 2px solid steelblue; /* Add border back to fieldsets */
+    border: 2px solid black; /* Set border color to black */
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 20px;
@@ -132,7 +132,7 @@ form fieldset {
 
 form legend {
     font-weight: bold;
-    color: steelblue;
+    color: black; /* Set the legend (section title) text color to black */
 }
 
 form label {
