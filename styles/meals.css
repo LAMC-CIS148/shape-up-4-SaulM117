@@ -83,20 +83,20 @@ footer {
 
 /* Form container styles */
 form {
-    border: 1px solid lightgray; /* Adds a border around the form */
-    padding: 15px; /* Adds spacing between the border and content */
-    margin: 20px auto; /* Centers the form with margin on top/bottom */
-    width: 80%; /* Reduces the width of the form */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
-    background-color: white; /* Optional: background color */
+    border: 1px solid steelblue; /* Single solid border around the form */
+    padding: 20px; /* Space between the border and content */
+    margin: 20px auto; /* Centers the form */
+    box-shadow: none; /* Removes any shadow effect */
+    width: auto; /* Uses the original width */
+    background-color: transparent; /* Ensures background matches the original design */
 }
 
 /* Fieldset styles */
 fieldset {
-    border: 1px solid steelblue; /* Border for individual fieldsets */
-    padding: 10px; /* Space between the content and the fieldset border */
-    margin-bottom: 15px; /* Adds spacing between fieldsets */
-    background-color: #f9f9f9; /* Light background for better contrast */
+    border: 1px solid steelblue; /* Single border for fieldsets */
+    padding: 15px; /* Space between content and the fieldset border */
+    margin-bottom: 20px; /* Adds spacing between fieldsets */
+    background-color: white; /* Ensures the fieldsets are clearly defined */
 }
 
 /* Legend styles */
@@ -104,12 +104,12 @@ legend {
     font-weight: bold;
     color: steelblue;
     padding: 0 5px; /* Adds spacing around the legend text */
+    background-color: white; /* Matches the fieldset background */
 }
 
 /* Label and input styling */
 label {
-    display: inline-block;
-    width: 150px; /* Aligns labels */
+    display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -118,7 +118,7 @@ input[type="email"],
 input[type="number"], 
 select, 
 textarea {
-    width: calc(100% - 160px); /* Adjust width for consistent alignment */
+    width: 100%; /* Full-width inputs for consistent alignment */
     padding: 5px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -128,7 +128,7 @@ textarea {
 
 /* Textarea specific styles */
 textarea {
-    width: calc(100% - 160px);
+    width: 100%;
     height: 50px;
 }
 
@@ -177,7 +177,6 @@ main ul a {
     }
     label {
         display: block; /* Stack labels for smaller screens */
-        width: 100%;
     }
     input[type="text"], 
     input[type="email"], 
