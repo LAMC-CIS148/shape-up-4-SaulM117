@@ -26,7 +26,7 @@ main {
 /* Sidebar styling */
 aside {
     width: 245px;
-    padding: 10px; /* Add some padding */
+    padding: 10px;
 }
 aside h2 {
     color: #800000;
@@ -49,7 +49,7 @@ footer {
 }
 #nav_menu ul li {
     float: left;
-    width: 20%; /* Adjust width as needed */
+    width: 20%;
 }
 #nav_menu ul li a {
     display: block;
@@ -83,28 +83,26 @@ footer {
 
 /* Form container styles */
 form {
-    border: 1px solid steelblue; /* Single solid border around the form */
-    padding: 20px; /* Space between the border and content */
-    margin: 20px auto; /* Centers the form */
-    box-shadow: none; /* Removes any shadow effect */
-    width: auto; /* Uses the original width */
-    background-color: transparent; /* Ensures background matches the original design */
+    margin: 20px 0 20px 5%; /* Moves the form slightly to the left */
+    padding: 20px; /* Keeps internal spacing consistent */
+    background-color: transparent; /* No background or borders */
+    box-shadow: none;
+    width: auto; /* Adjusts to content */
 }
 
 /* Fieldset styles */
 fieldset {
-    border: 1px solid steelblue; /* Single border for fieldsets */
-    padding: 15px; /* Space between content and the fieldset border */
-    margin-bottom: 20px; /* Adds spacing between fieldsets */
-    background-color: white; /* Ensures the fieldsets are clearly defined */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white; /* Keeps fieldsets clearly visible */
 }
 
 /* Legend styles */
 legend {
     font-weight: bold;
     color: steelblue;
-    padding: 0 5px; /* Adds spacing around the legend text */
-    background-color: white; /* Matches the fieldset background */
+    padding: 0 5px;
+    background-color: white;
 }
 
 /* Label and input styling */
@@ -118,7 +116,7 @@ input[type="email"],
 input[type="number"], 
 select, 
 textarea {
-    width: 100%; /* Full-width inputs for consistent alignment */
+    width: 100%;
     padding: 5px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -163,20 +161,20 @@ main ul a {
 /* Header adjustments for smaller screens */
 @media only screen and (max-width: 767px) {
     header h2 {
-        font-size: 200%; /* Increase header font size */
+        font-size: 200%;
     }
     main {
-        flex-direction: column; /* Stack elements in one column */
+        flex-direction: column;
     }
 }
 
 /* Smaller screens (phones) */
 @media only screen and (max-width: 479px) {
     header h2 {
-        font-size: 150%; /* Reduce header font size */
+        font-size: 150%;
     }
     label {
-        display: block; /* Stack labels for smaller screens */
+        display: block;
     }
     input[type="text"], 
     input[type="email"], 
@@ -186,7 +184,7 @@ main ul a {
         width: 100%;
     }
     button {
-        width: 100%; /* Full-width buttons for small screens */
+        width: 100%;
         margin: 5px 0;
     }
 }
