@@ -123,12 +123,16 @@ form {
 }
 
 form fieldset {
-    border: none;
+    border: 2px solid steelblue; /* Add border back to fieldsets */
+    border-radius: 5px;
+    padding: 20px;
     margin-bottom: 20px;
+    background-color: #f9f9f9;
 }
 
 form legend {
     font-weight: bold;
+    color: steelblue;
 }
 
 form label {
