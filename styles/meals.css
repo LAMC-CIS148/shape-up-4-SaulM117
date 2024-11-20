@@ -1,43 +1,68 @@
-/* General page styling */
 body {
     font-family: Arial, sans-serif;
     width: 99%;
     max-width: 960px;
     margin: 0 auto;
-    border: 2px solid steelblue;
+    border: none; /* Removed border */
     box-shadow: 0 0 10px black;
 }
 
-/* Header styles */
 header {
     width: 100%;
     border-bottom: 1px solid steelblue;
     background: linear-gradient(to bottom, white, lightsteelblue);
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
+
+#header-content {
+    display: flex;
+    align-items: center;
+}
+
+#header-content img {
+    margin-right: 15px;
+}
+
+#header-text h2, #header-text h3 {
+    margin: 0;
+}
+
 .shadow {
     text-shadow: 2px 2px 4px steelblue;
 }
 
-/* Main container */
 main {
-    display: flex; /* Use flexbox for layout */
+    display: flex;
 }
 
-/* Sidebar styling */
 aside {
     width: 245px;
     padding: 10px;
 }
+
 aside h2 {
     color: #800000;
 }
 
-/* Footer styles */
 footer {
     clear: both;
     text-align: center;
     background-color: steelblue;
     color: white;
+}
+
+main a {
+    color: #800000 !important;
+}
+
+main ul a {
+    color: steelblue !important;
+}
+
+h3 {
+    color: #800000;
 }
 
 /* Navigation styles */
@@ -47,10 +72,12 @@ footer {
     padding: 0;
     position: relative;
 }
+
 #nav_menu ul li {
     float: left;
     width: 20%;
 }
+
 #nav_menu ul li a {
     display: block;
     text-align: center;
@@ -60,132 +87,111 @@ footer {
     color: white;
     font-weight: bold;
 }
+
 #nav_menu a.current {
     color: black;
 }
+
 #nav_menu ul ul {
     width: 100%;
     display: none;
     position: absolute;
     top: 100%;
 }
+
 #nav_menu ul ul li {
     float: none;
 }
+
 #nav_menu ul li:hover > ul {
     display: block;
 }
+
 #nav_menu > ul::after {
     content: "";
     clear: both;
     display: block;
 }
 
-/* Form container styles */
+#mobile_menu {
+    display: none;
+}
+
 form {
-    margin: 20px 0 20px 5%; /* Moves the form slightly to the left */
-    padding: 15px; /* Keeps internal spacing consistent */
-    background-color: transparent; /* No background or borders */
-    box-shadow: none;
-    width: 75%; /* Shrinks the form width */
-    max-width: 600px; /* Ensures a compact maximum width */
+    width: 80%; /* Shrunk form width */
+    margin: 0 auto;
 }
 
-/* Fieldset styles */
-fieldset {
-    padding: 10px; /* Reduce padding inside fieldsets */
-    margin-bottom: 15px; /* Less margin between fieldsets */
-    background-color: white;
+form fieldset {
+    border: none;
+    margin-bottom: 20px;
 }
 
-/* Legend styles */
-legend {
+form legend {
     font-weight: bold;
-    color: steelblue;
-    padding: 0 5px;
-    background-color: white;
 }
 
-/* Label and input styling */
-label {
+form label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 8px;
 }
-input[type="text"], 
-input[type="email"], 
-input[type="number"], 
-select, 
-textarea {
+
+form input, form select, form textarea {
     width: 100%;
-    padding: 5px;
+    padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    box-sizing: border-box;
 }
 
-/* Textarea specific styles */
-textarea {
-    width: 100%;
-    height: 50px;
-}
-
-/* Radio and checkbox alignment */
-input[type="radio"], input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-/* Button styling */
-button {
+form button {
+    padding: 10px 20px;
     background-color: steelblue;
     color: white;
     border: none;
-    padding: 8px 12px; /* Reduced button size */
-    border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;
-    margin-right: 5px;
-}
-button:hover {
-    background-color: #4682b4;
 }
 
-/* Link styles */
-main a {
-    color: #800000 !important;
-}
-main ul a {
-    color: steelblue !important;
+form button[type="reset"] {
+    background-color: lightgray;
 }
 
-/* Header adjustments for smaller screens */
+form button:hover {
+    background-color: lightsteelblue;
+}
+
+form button[type="reset"]:hover {
+    background-color: gray;
+}
+
 @media only screen and (max-width: 767px) {
     header h2 {
         font-size: 200%;
     }
+
     main {
         flex-direction: column;
     }
+
+    .slicknav_menu {
+        background-color: steelblue !important;
+        padding: 3px !important;
+    }
+
+    .slicknav_menu ul {
+        background-color: steelblue !important;
+    }
+
+    .slicknav_menu a {
+        color: white;
+    }
+
+    .slicknav_menu a:hover {
+        color: lightsteelblue;
+    }
 }
 
-/* Smaller screens (phones) */
 @media only screen and (max-width: 479px) {
     header h2 {
         font-size: 150%;
-    }
-    label {
-        display: block;
-    }
-    input[type="text"], 
-    input[type="email"], 
-    input[type="number"], 
-    select, 
-    textarea {
-        width: 100%;
-    }
-    button {
-        width: 100%;
-        margin: 5px 0;
     }
 }
