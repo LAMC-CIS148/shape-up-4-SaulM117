@@ -1,3 +1,4 @@
+/* General page styling */
 body {
     font-family: Arial, sans-serif;
     width: 99%;
@@ -7,6 +8,7 @@ body {
     box-shadow: 0 0 10px black;
 }
 
+/* Header styles */
 header {
     width: 100%;
     border-bottom: 1px solid steelblue;
@@ -16,35 +18,26 @@ header {
     text-shadow: 2px 2px 4px steelblue;
 }
 
+/* Main container */
 main {
     display: flex; /* Use flexbox for layout */
 }
+
+/* Sidebar styling */
 aside {
-    width: 245px; /* Set width for aside */
-    /* Optional styles */
+    width: 245px;
     padding: 10px; /* Add some padding */
 }
-
 aside h2 {
     color: #800000;
 }
 
+/* Footer styles */
 footer {
     clear: both;
     text-align: center;
     background-color: steelblue;
     color: white;
-}
-main a {
-    color: #800000 !important;
-}
-
-main ul a {
-    color: steelblue !important;
-}
-
-h3 {
-    color: #800000;
 }
 
 /* Navigation styles */
@@ -54,12 +47,10 @@ h3 {
     padding: 0;
     position: relative;
 }
-
 #nav_menu ul li {
     float: left;
     width: 20%; /* Adjust width as needed */
 }
-
 #nav_menu ul li a {
     display: block;
     text-align: center;
@@ -69,64 +60,134 @@ h3 {
     color: white;
     font-weight: bold;
 }
-
 #nav_menu a.current {
     color: black;
 }
-
 #nav_menu ul ul {
     width: 100%;
     display: none;
     position: absolute;
     top: 100%;
 }
-
 #nav_menu ul ul li {
     float: none;
 }
-
 #nav_menu ul li:hover > ul {
     display: block;
 }
-
 #nav_menu > ul::after {
     content: "";
     clear: both;
     display: block;
 }
 
-#mobile_menu {
-    display: none;
-    }
+/* Form container styles */
+form {
+    border: 1px solid lightgray; /* Adds a border around the form */
+    padding: 15px; /* Adds spacing between the border and content */
+    margin: 20px auto; /* Centers the form with margin on top/bottom */
+    width: 80%; /* Reduces the width of the form */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+    background-color: white; /* Optional: background color */
+}
 
+/* Fieldset styles */
+fieldset {
+    border: 1px solid steelblue; /* Border for individual fieldsets */
+    padding: 10px; /* Space between the content and the fieldset border */
+    margin-bottom: 15px; /* Adds spacing between fieldsets */
+    background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+/* Legend styles */
+legend {
+    font-weight: bold;
+    color: steelblue;
+    padding: 0 5px; /* Adds spacing around the legend text */
+}
+
+/* Label and input styling */
+label {
+    display: inline-block;
+    width: 150px; /* Aligns labels */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+select, 
+textarea {
+    width: calc(100% - 160px); /* Adjust width for consistent alignment */
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Textarea specific styles */
+textarea {
+    width: calc(100% - 160px);
+    height: 50px;
+}
+
+/* Radio and checkbox alignment */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styling */
+button {
+    background-color: steelblue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+button:hover {
+    background-color: #4682b4;
+}
+
+/* Link styles */
+main a {
+    color: #800000 !important;
+}
+main ul a {
+    color: steelblue !important;
+}
+
+/* Header adjustments for smaller screens */
 @media only screen and (max-width: 767px) {
     header h2 {
         font-size: 200%; /* Increase header font size */
     }
-    
     main {
         flex-direction: column; /* Stack elements in one column */
     }
-
-    .slicknav_menu {
-        background-color: steelblue !important; /* Background color for mobile menu */
-        padding: 3px !important; /* Padding for mobile menu */
-    }
-    
-    .slicknav_menu ul {
-        background-color: steelblue !important; /* Background for ul elements */
-    }
-    
-    .slicknav_menu a {
-        color: white; /* Text color for links */
-    }
-    
-    .slicknav_menu a:hover {
-        color: lightsteelblue; /* Hover color for links */
-    }
 }
 
+/* Smaller screens (phones) */
 @media only screen and (max-width: 479px) {
     header h2 {
         font-size: 150%; /* Reduce header font size */
     }
+    label {
+        display: block; /* Stack labels for smaller screens */
+        width: 100%;
+    }
+    input[type="text"], 
+    input[type="email"], 
+    input[type="number"], 
+    select, 
+    textarea {
+        width: 100%;
+    }
+    button {
+        width: 100%; /* Full-width buttons for small screens */
+        margin: 5px 0;
+    }
+}
