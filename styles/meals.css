@@ -39,16 +39,13 @@ main {
 
 aside {
     width: 245px;
-    padding: 10px;
+    padding: 20px;
 }
 
 aside h2 {
     color: #800000;
 }
-section h2 p {
-    width: 50px
-    padding: 20px
-}
+
 footer {
     clear: both;
     text-align: center;
@@ -121,7 +118,7 @@ h3 {
 }
 
 form {
-    width: 70%; /* Shrunk form width */
+    width: 80%; /* Shrunk form width */
     margin: 0 auto;
 }
 
