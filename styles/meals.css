@@ -1,3 +1,4 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     width: 99%;
@@ -117,56 +118,77 @@ h3 {
     display: none;
 }
 
+/* Form styling */
 form {
-    width: 80%; /* Shrunk form width */
-    margin: 0 auto;
+    width: 90%; /* Adjusted width */
+    margin: 20px auto; /* Add spacing around form */
 }
 
-form fieldset {
-    border: 2px solid black; /* Set border color to black */
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-}
-
-form legend {
-    font-weight: bold;
-    color: black; /* Set the legend (section title) text color to black */
-}
-
-form label {
-    display: block;
-    margin-bottom: 8px;
-}
-
+/* Input and select field styling */
 form input, form select, form textarea {
-    width: 100%;
+    width: 95%; /* Slightly reduce input width for spacing */
+    margin-bottom: 15px; /* Add spacing between fields */
     padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Subtle background */
+    box-shadow: inset 1px 1px 3px #ddd; /* Inner shadow for depth */
 }
 
+/* Fieldset styling */
+form fieldset {
+    margin-bottom: 25px; /* Add spacing between fieldsets */
+    border: 1px solid #ccc; /* Adjust border to a lighter color */
+    padding: 20px;
+}
+
+/* Legend styling */
+form legend {
+    font-size: 1.2em;
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Button styles */
 form button {
-    padding: 10px 20px;
+    width: auto;
+    display: inline-block; /* Keep buttons inline */
+    margin-right: 10px; /* Add spacing between buttons */
+    padding: 10px 15px;
+    border-radius: 5px;
     background-color: steelblue;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-form button[type="reset"] {
-    background-color: lightgray;
+/* Submit button hover effect */
+form button:hover {
+    background-color: #5a9bd5; /* Slightly brighter blue */
 }
 
-form button:hover {
-    background-color: lightsteelblue;
+/* Reset button */
+form button[type="reset"] {
+    background-color: #d3d3d3; /* Light gray */
+    color: black;
 }
 
 form button[type="reset"]:hover {
-    background-color: gray;
+    background-color: #aaa; /* Darker gray */
 }
 
+/* Add consistent spacing for checkboxes and radio buttons */
+form label input[type="radio"],
+form label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Align checkbox and textarea */
+form textarea {
+    resize: none; /* Disable resizing for uniformity */
+    height: 60px; /* Set height for textarea */
+}
+
+/* Media Queries */
 @media only screen and (max-width: 767px) {
     header h2 {
         font-size: 200%;
